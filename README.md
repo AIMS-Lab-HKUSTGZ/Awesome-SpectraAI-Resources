@@ -52,16 +52,24 @@
 ### 4.2 Inverse Task (Spectrum → Molecule)  
 *Molecular characterization from infrared spectra*  
 
+---
+
+## 5. Multimodal Spectroscopy (Small Molecules)
+### 5.1 Forward Task (Molecule → Multiple Spectra)
+*Joint prediction of multiple spectral modalities from molecular structures*
+
+### 5.2 Inverse Task (Multiple Spectra → Molecule)
+*Multimodal integration for enhanced molecular identification*
 
 ---
 
-## 5. X-ray Diffraction (XRD) (Crystals)
+## 6. X-ray Diffraction (XRD) (Crystals)
 
-### 5.1 Forward Task (Crystal → Pattern)  
+### 6.1 Forward Task (Crystal → Pattern)  
 *Prediction of XRD patterns from crystal structures*  
  
 
-### 5.2 Inverse Task (Pattern → Crystal)  
+### 6.2 Inverse Task (Pattern → Crystal)  
 *Crystal structure determination from XRD patterns*  
 
 

@@ -65,7 +65,7 @@
 |---------------------|----------------|------------------|----------------------|---------|---------------------------|
 | [NMRShiftDB2](https://nmrshiftdb.nmr.uni-koeln.de/) | ~50,000 | Real | ¹H, ¹³C | ✅ Yes | ✅ Yes (open source) |
 | [BMRB](https://bmrb.io/) | >13,000 biomolecules | Real | ¹H, ¹³C, ¹⁵N, ²H, ³¹P | ✅ Yes | ✅ Yes (FTP/STAR) |
-| [SDBS](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi) | ~14,000 | Real | ¹H, ¹³C, IR, MS, UV | ✅ Yes | ⚠️ Partially (limited API) |
+| [SDBS](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi) | ~14,000 | Real | ¹H, ¹³C, IR, MS, UV | ✅ Yes | ✅ Yes (Crawl Script Needed) |
 | [QM9-NMR (Simulated)](https://doi.org/10.1021/acs.jcim.1c01160) | 130,000+ | Simulated (DFT) | ¹H, ¹³C | ✅ Yes | ✅ Yes (via DOI or GitHub) |
 | [2DNMRGym (2024)](https://arxiv.org/abs/2405.18181) | 22,000 2D HSQC | Simulated | HSQC (2D) | ✅ Yes | ✅ Yes (HuggingFace) |
 | [NMRMixDB](https://nmrmixdb.github.io/) | ~3,000 mixtures | Real | ¹H | ✅ Yes (with labels) | ✅ Yes |

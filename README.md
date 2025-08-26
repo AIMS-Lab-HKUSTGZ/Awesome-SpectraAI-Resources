@@ -70,6 +70,9 @@
 | [2DNMRGym (2024)](https://arxiv.org/abs/2405.18181) | 22,000 2D HSQC | Simulated | HSQC (2D) | ✅ Yes | ✅ Yes (HuggingFace) |
 | [NMRMixDB](https://nmrmixdb.github.io/) | ~3,000 mixtures | Real | ¹H | ✅ Yes (with labels) | ✅ Yes |
 | [NMRPredBench](https://github.com/ur-whitelab/NMRPredBench) | ~3,000 | Real + Simulated | ¹H, ¹³C | ✅ Yes | ✅ Yes (GitHub) |
+[MolAid](https://mol.org/) | ~840K+ | Experimental | Multi-property | ✅ Yes |  ❌ No(API Chared) | Chinese chemical big data platform |
+| [NIST WebBook](https://webbook.nist.gov/) | ~700K+ | Experimental | ¹H, ¹³C etc. | ✅ Yes | ✅ Yes (Need Search Key) | NIST-standardized spectral database |
+| [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | ~100M+ | Experimental + Predicted | Full compound attributes | ✅ Yes | ✅ Yes (API) | Largest open chemical database |
 ---
 
 ## 4. IR Spectroscopy (Small Molecules)

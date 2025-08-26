@@ -14,7 +14,7 @@
  
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
-| [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  | low consumption, fast|
+| [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  | lightning, fast|
 
 
 

@@ -3,7 +3,7 @@
   <img width="690" height="83" alt="Awesome SpectraAI Resources" src="https://github.com/user-attachments/assets/5ecb4f23-cb12-46c8-bd8b-5f13481a5850" />
 </div>
 
-✨✨curated collection of resources on artificial intelligence for spectral data analysis, covering computational methods for mass spectrometry (MS), NMR, IR, and XRD data.
+✨✨ A curated collection of resources on artificial intelligence for spectral data analysis, covering computational methods for mass spectrometry (MS), NMR, IR, and XRD data.
 
 ---
 
@@ -12,6 +12,12 @@
 ### 1.1 Forward Task (Molecule → Spectrum)  
 *Computational approaches for predicting mass spectra from molecular structures*  
  
+ | Paper Title & Link | Method Type | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  | lightning, fast|
+
+
+
 
 ### 1.2 Inverse Task (Spectrum → Molecule)  
 *AI methods for molecular identification and elucidation from mass spectra*  

@@ -14,13 +14,29 @@
  
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
-| [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  | lightning, fast|
-
-
+| []() | | | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  ||
+| [Inferring CID by Estimating Breakage Events and Reconstructing their Graphs ](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.3c04654) | GNN, Transformer | Analytical Chemistry | [![Star](https://img.shields.io/github/stars/coleygroup/ms-pred.svg?style=social&label=Star)](https://github.com/coleygroup/ms-pred)  |ICEBERG|
+| [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  |GRAFF-MS |
 
 
 ### 1.2 Inverse Task (Spectrum → Molecule)  
 *AI methods for molecular identification and elucidation from mass spectra*  
+ | Paper Title & Link | Method Type | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [An end-to-end deep learning framework for translating mass spectra to de-novo molecules](https://www.nature.com/articles/s42004-023-00932-3) |GRU, CNN |communications chemistry| [![Star](https://img.shields.io/github/stars/KavrakiLab/Spec2Mol.svg?style=social&label=Star)](https://github.com/KavrakiLab/Spec2Mol)  |Spec2mol |
+
+### 1.3 General Tools
+ | Paper Title & Link | Feasible scene | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| []() | | | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  ||
+| [matchms- processing and similarity evaluation of mass spectrometry data](https://joss.theoj.org/papers/10.21105/joss.02411) |raw mass spectra to pre- and post-processe  | The Journal of Open Source Software |[![Star](https://img.shields.io/github/stars/matchms/matchms.svg?style=social&label=Star)](https://github.com/matchms/matchms)  |python package|
+| [MS2DeepScore: a novel deep learning similarity measure to compare tandem mass spectra](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00558-4) | compare tandem mass spectra | Journal of Cheminformatics| [![Star](https://img.shields.io/github/stars/matchms/ms2deepscore.svg?style=social&label=Star)](https://github.com/matchms/ms2deepscore) | |
+
+
+### 1.4 Datasets and Benchmark
+ | Name | Type | Size | Website | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+
 
 
 ---

@@ -75,6 +75,34 @@
 | [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | ~100M+ | Experimental + Predicted | Full compound attributes | ✅ Yes | ✅ Yes (API) | Largest open chemical database |
 ---
 
+
+### 📚 Synthetic NMR Papers & Datasets
+
+
+| Category                 | Name                                 | What it offers                                                       | Typical Use                                                  | Link                                                                                                     |
+| ------------------------ | ------------------------------------ | -------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| Dataset & Pipeline       | **ARTINA – 100‑Protein NMR Dataset** | 1329 2D–4D spectra + chemical shift assignments + protein structures | Train/test protein NMR auto‑assignment & structure inference | [https://www.nature.com/articles/s41597-023-02879-5](https://www.nature.com/articles/s41597-023-02879-5) |
+| Database (LLM‑extracted) | **NMRBank**                          | \~225k small‑molecule records (SMILES, ¹H/¹³C shifts)                | Build ML models for shift/spectrum prediction                | [https://pmc.ncbi.nlm.nih.gov/articles/PMC12118362/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12118362/) |
+| Synthetic multimodal     | **IR‑NMR Dataset**                   | 177k IR spectra + 1.2k NMR shifts (DFT+ML)                           | Cross‑modal learning / pretraining                           | [https://www.nature.com/articles/s41597-025-05729-8](https://www.nature.com/articles/s41597-025-05729-8) |
+| Carbohydrates            | **GlycoNMR**                         | 2,609 glycans with 211k NMR shifts                                   | Domain‑specific ML (carbohydrates)                           | [https://arxiv.org/abs/2311.17134](https://arxiv.org/abs/2311.17134)                                     |
+| 2D spectra               | **2DNMRGym**                         | 22k+ HSQC spectra + SMILES (partly human‑annotated)                  | Train/benchmark 2D NMR predictors                            | [https://arxiv.org/abs/2505.18181](https://arxiv.org/abs/2505.18181)                                     |
+
+---
+
+#### 🛠️ Tools for Synthetic NMR Generation
+
+| Tool                       | What it does                                                                       | How to use                                                            | Required Inputs                                                                                                        | Output                                              | Link                                                                                                             |
+| -------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Spinach (Matlab)**       | Physics‑based simulation of 1D/2D spectra (COSY, HSQC, NOESY), relaxation, MAS NMR | Define spin system + select pulse sequence + run simulation in Matlab | Spin system: isotopes, chemical shifts (ppm), J couplings (Hz), CSA/dipolar terms; external field (B₀); pulse sequence | Time‑domain FID & frequency‑domain spectra (1D/2D)  | [https://en.wikipedia.org/wiki/Spinach\_(software)](https://en.wikipedia.org/wiki/Spinach_%28software%29)        |
+| **ORCA / NWChem**          | Quantum chemistry calculation of shielding tensors and J couplings                 | Run DFT/ab initio with NMR keyword                                    | 3D geometry (XYZ/MOL/PDB), basis set, method, optional solvent model                                                   | Isotropic shieldings (σ), J‑couplings, CSA tensors  | [https://github.com/nwchemgit/nwchem](https://github.com/nwchemgit/nwchem)                                       |
+| **NMRDB**                  | Online prediction of ¹H/¹³C (1D and 2D COSY/HSQC/HMBC)                             | Draw molecule or paste SMILES on web UI                               | Molecular structure (drawn or SMILES), optional solvent/field strength                                                 | Simulated 1D/2D spectra, JCAMP export               | [https://www.nmrdb.org/](https://www.nmrdb.org/)                                                                 |
+| **ChemAxon NMR Predictor** | Predicts ¹H/¹³C chemical shifts and spectra (GUI + CLI)                            | Use MarvinSketch or `cxcalc nmr` CLI                                  | Structure input (SMILES, MOL, SDF), optional solvent/field                                                             | Chemical shifts, spectra, JCAMP files               | [https://docs.chemaxon.com/display/docs/NMR%2BPredictor](https://docs.chemaxon.com/display/docs/NMR%2BPredictor) |
+| **NMRbox**                 | VM platform bundling many NMR tools (TopSpin, Sparky, CCPN, etc.)                  | Launch VM, import spectra, run pipelines                              | Experimental or synthetic spectra, peak lists                                                                          | Processed spectra, assignments, structural analysis | [https://nmrbox.nmrhub.org/software](https://nmrbox.nmrhub.org/software)                                         |
+
+---
+
+
+
 ## 4. IR Spectroscopy (Small Molecules)
 
 ### 4.1 Forward Task (Molecule → Spectrum)  

@@ -109,10 +109,13 @@
 *Infrared spectrum prediction from molecular structures*  
 ### 📊 Forward Task Method Table (Molecule → Spectrum)
 
-| Paper Title & Link | Published in | Method Type | Input | Metric / Accuracy | Data Source | Code | CKPT |
+| Paper Title & Link | Published in | Method Type | Input | Metric | Data Source | Code | CKPT |
 |------------|---------------|-------|-------|----------|--------------------|------|------|
-| [Predicting Infrared Spectra with Message Passing Neural Networks (2021)](https://doi.org/10.1021/acs.jcim.1c00055) | J. Chem. Inf. Model. | DL (MPNN + FFNN) |  **Comp:** SMILES<br>**Exp:** SMILES+Phase | **Comp:** SIS = 0.969<br>**Exp:** SIS = 0.864  | **Comp:** PubChem<br>**Exp:** NIST, PNNL, AIST, Coblentz  | [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24"/>](https://github.com/gfm-collab/chemprop-IR) | <a href="https://zenodo.org/records/4698943"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
-| [Graphormer-IR: Graph Transformers Predict Experimental IR Spectra (2024)](https://doi.org/10.1021/acs.jcim.4c00378) | J. Chem. Inf. Model. | DL (Graph Transformer + MLP, 1D-CNN, Global Phase Node) | **Exp:** SMILES+Phase | **Exp:** SIS = 0.8523 ± 0.0006 | **Exp:** NIST, AIST, Coblentz | [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24"/>](https://github.com/HopkinsLaboratory/Graphormer-IR) | <a href="https://zenodo.org/records/10790190"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
+| [Machine Learning Molecular Dynamics for the Simulation of Infrared Spectra (2017)](https://doi.org/10.1039/c7sc02267k) | Chem. Sci. | ML (HDNNP + NN Dipole) | 3D coordinates  | MAE | DFT | — | — |
+| [A Machine Learning Protocol for Predicting Protein Infrared Spectra (2020)](https://pubs.acs.org/doi/10.1021/jacs.0c06530) | J. Am. Chem. Soc. | ML (MLP) | 3D coordinates  | RMSE + Spearman | DFT | — | — |
+| [Predicting Infrared Spectra with Message Passing Neural Networks (2021)](https://doi.org/10.1021/acs.jcim.1c00055) | J. Chem. Inf. Model. | DL (MPNN + FFNN) |  **Comp:** SMILES<br>**Exp:** SMILES+Phase | SIS | **Comp:** PubChem<br>**Exp:** NIST, PNNL, AIST, Coblentz  | [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24"/>](https://github.com/gfm-collab/chemprop-IR) | <a href="https://zenodo.org/records/4698943"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
+| [Graphormer-IR: Graph Transformers Predict Experimental IR Spectra (2024)](https://doi.org/10.1021/acs.jcim.4c00378) | J. Chem. Inf. Model. | DL (Graph Transformer + MLP, 1D-CNN) | SMILES+Phase | SIS | NIST, AIST, Coblentz | [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24"/>](https://github.com/HopkinsLaboratory/Graphormer-IR) | <a href="https://zenodo.org/records/10790190"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
+
 
 ### 4.2 Inverse Task (Spectrum → Molecule)  
 *Molecular characterization from infrared spectra*  

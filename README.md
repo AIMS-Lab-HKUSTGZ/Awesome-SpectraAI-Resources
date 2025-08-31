@@ -149,7 +149,13 @@
 
 ### 4.1 Forward Task (Molecule → Spectrum)  
 *Infrared spectrum prediction from molecular structures*  
-
+| Paper Title & Link | Published in | Method Type | Input | Metric | Data Source | Code | CKPT |
+|------------|---------------|-------|-------|----------|--------------------|------|------|
+| [Machine Learning Molecular Dynamics for the Simulation of Infrared Spectra (2017)](https://doi.org/10.1039/c7sc02267k) | Chem. Sci. | ML (HDNNP + NN Dipole) | 3D coordinates  | MAE | DFT | — | — |
+| [A Machine Learning Protocol for Predicting Protein Infrared Spectra (2020)](https://pubs.acs.org/doi/10.1021/jacs.0c06530) | J. Am. Chem. Soc. | ML (MLP) | 3D coordinates  | RMSE + Spearman | DFT | — | — |
+| [Predicting Infrared Spectra with Message Passing Neural Networks (2021)](https://doi.org/10.1021/acs.jcim.1c00055) | J. Chem. Inf. Model. | DL (MPNN + FFNN) |  **Comp:** SMILES<br>**Exp:** SMILES+Phase | SIS | **Comp:** PubChem<br>**Exp:** NIST, PNNL, AIST, Coblentz  | [![Star](https://img.shields.io/github/stars/gfm-collab/chemprop-IR.svg?style=social&label=Star)](https://github.com/gfm-collab/chemprop-IR) | <a href="https://zenodo.org/records/4698943"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
+| [Graphormer-IR: Graph Transformers Predict Experimental IR Spectra (2024)](https://doi.org/10.1021/acs.jcim.4c00378) | J. Chem. Inf. Model. | DL (Graph Transformer + MLP, 1D-CNN) | SMILES+Phase | SIS | NIST, AIST, Coblentz | [![Star](https://img.shields.io/github/stars/HopkinsLaboratory/Graphormer-IR.svg?style=social&label=Star)](https://github.com/HopkinsLaboratory/Graphormer-IR) | <a href="https://zenodo.org/records/10790190"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
+| [Neural Network Approach for Predicting Infrared Spectra from 3D Molecular Structure (2024)](https://doi.org/10.1016/j.cplett.2024.141603) | Chem. Phys. Lett. | DL (MPNN) | 3D Molecular Structure | SIS | NIST | [![Star](https://img.shields.io/github/stars/allouchear/NNMol-IR.svg?style=social&label=Star)](https://github.com/allouchear/NNMol-IR) | <a href="https://zenodo.org/records/13681778"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 
 ### 4.2 Inverse Task (Spectrum → Molecule)  
 *Molecular characterization from infrared spectra*  

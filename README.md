@@ -23,7 +23,8 @@
 | [Mass Spectra Prediction with Structural Motif-based Graph Neural Networks](https://doi.org/10.1038/s41598-024-51760-x) | GNN, MLP, Graph Transformer | Scientific Reports |  | MoMS-Net |
 | [Prediction of electron ionization mass spectra based on graph convolutional networks](https://doi.org/10.1016/j.ijms.2022.116817) | GCN, MLP | International Journal of Mass Spectrometry |  | Baojie Zhang mass spectra prediction |
 |[QCxMS and QCEIMS related publications](https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms_cites.html)|Born-Oppenheimer Molecular Dynamics|| [![Star](https://img.shields.io/github/stars/qcxms/QCxMS.svg?style=social&label=Star)](https://github.com/qcxms/QCxMS) |QCxMS, QCxMS2, QCEIMS, First Principles Calculation, [project website](https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms_cites.html)|
-
+|[3DMolMS: prediction of tandem mass spectra from 3D molecular conformations]()| 3D Molecular Network |Bioinformatics|[![Star](https://img.shields.io/github/stars/JosieHong/3DMolMS.svg?style=social&label=Star)](https://github.com/JosieHong/3DMolMS)|3DMolMs,[project website](https://koina.wilhelmlab.org/docs#post-/3dmolms_qtof/infer)|
+| [Towards First Principles Calculation of Electron Impact Mass Spectra of Molecules](https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.201300158)|Mass Spectroscopy computational therory| Angewandte International Edition Chemie|| theory introduction|
 
 
 
@@ -70,9 +71,9 @@
 | [The METLIN small molecule dataset for machine learning-based retention time prediction](https://doi.org/10.1038/s41467-019-13680-7) | Deep Learning | Nature Communications |  | [project website](https://figshare.com/articles/dataset/The_METLIN_small_molecule_dataset_for_machine_learning-based_retention_time_prediction/8038913), retention time prediction, R package |
 | [An end-to-end deep learning method for mass spectrometry data analysis to reveal disease-specific metabolic profiles](https://doi.org/10.1038/s41467-024-51433-3) | Deep Learning | Nature Communications | [![Star](https://img.shields.io/github/stars/yjdeng9/DeepMSProfiler.svg?style=social&label=Star)](https://github.com/yjdeng9/DeepMSProfiler) | DeepMSProfiler, disease-specific metabolic profiling |
 | [Trackable and scalable LC-MS metabolomics data processing using asari](https://doi.org/10.1038/s41467-023-39889-1) | open-source software tool | Nature Communications | [![Star](https://img.shields.io/github/stars/shuzhao-li/asari.svg?style=social&label=Star)](https://github.com/shuzhao-li/asari) | asari, LC-MS data processing, Project Link: [https://pypi.org/project/asari-metabolomics/](https://pypi.org/project/asari-metabolomics/) |
-
+|[Automatic Compound Annotation from Mass Spectrometry Data Using MAGMa](https://pmc.ncbi.nlm.nih.gov/articles/PMC4321337/pdf/massspectrometry-3-Special_Issue_2-S0033.pdf)|Ranking algorithm| Mass Spectrom (Tokyo)||Peak list annotation, MAGMa|
 ### 1.4 Datasets, Benchmark and Review
- | Name | Type | Size | Website | Notes |
+ | Name | Type | Venue | Website | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
 | [MassSpecGym: A benchmark for the discovery and identification of molecules](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c6c31413d5c53b7d1c343c1498734b0f-Abstract-Datasets_and_Benchmarks_Track.html) | Benchmark, Transformer, GNN | Advances in Neural Information Processing Systems | [![Star](https://img.shields.io/github/stars/pluskal-lab/MassSpecGym.svg?style=social&label=Star)](https://github.com/pluskal-lab/MassSpecGym) | MassSpecGym |
 | [Artificial Intelligence in Spectroscopy: Advancing Chemistry from Prediction to Generation and Beyond](http://arxiv.org/pdf/2502.09897v1) | Neural architectures, ML-empowered solution | arXiv |  | review |
@@ -87,6 +88,8 @@
 | [Computational mass spectrometry for small-molecule fragmentation](https://doi.org/10.1016/j.trac.2013.09.008) | General models of fragmentation, Simulation Software, Fragmentation Prediction Software, Machine Learning, Heuristic Method, Combination of MetFrag and spectral library search, Classifier, Kernel-based method, Combinatorial Optimization Model | TrAC Trends in Analytical Chemistry |  | DENDRAL, Mass Frontier 4, Mass Frontier 6, ACD Fragmenter, ISIS, MetFrag, MetFusion, Varmuza feature-based classification approach, Heinonen et al. kernel-based approach, Fragmentation Trees, mass spectrometry fragmentation, review paper |
 | [Searching molecular structure databases using tandem MS data: are we there yet?](https://doi.org/10.1016/j.cbpa.2016.12.010) | Automated Method, Machine Learning | Current Opinion in Chemical Biology |  | CFM-ID, MetFrag, MAGMa, FingerID, CSI:FingerID, MetFrag2.2, MAGMa+, MSFINDER, MIDAS, IOKR version of CSI:FingerID, metabolite identification, review paper |
 | [Unsupervised machine learning for exploratory data analysis in imaging mass spectrometry](https://doi.org/10.1002/mas.21602) | Unsupervised machine learning | Mass Spectrometry Reviews |  | PCA, IMS data analysis,  Project Link: [BioMap](https://www.ms-imaging.org/biomap/), review paper |
+|[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library||||[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
+
 ---
 
 ## 2. Mass Spectrometry (Peptides)

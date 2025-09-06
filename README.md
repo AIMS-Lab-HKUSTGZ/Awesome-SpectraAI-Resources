@@ -88,7 +88,7 @@
 | [Computational mass spectrometry for small-molecule fragmentation](https://doi.org/10.1016/j.trac.2013.09.008) | General models of fragmentation, Simulation Software, Fragmentation Prediction Software, Machine Learning, Heuristic Method, Combination of MetFrag and spectral library search, Classifier, Kernel-based method, Combinatorial Optimization Model | TrAC Trends in Analytical Chemistry |  | DENDRAL, Mass Frontier 4, Mass Frontier 6, ACD Fragmenter, ISIS, MetFrag, MetFusion, Varmuza feature-based classification approach, Heinonen et al. kernel-based approach, Fragmentation Trees, mass spectrometry fragmentation, review paper |
 | [Searching molecular structure databases using tandem MS data: are we there yet?](https://doi.org/10.1016/j.cbpa.2016.12.010) | Automated Method, Machine Learning | Current Opinion in Chemical Biology |  | CFM-ID, MetFrag, MAGMa, FingerID, CSI:FingerID, MetFrag2.2, MAGMa+, MSFINDER, MIDAS, IOKR version of CSI:FingerID, metabolite identification, review paper |
 | [Unsupervised machine learning for exploratory data analysis in imaging mass spectrometry](https://doi.org/10.1002/mas.21602) | Unsupervised machine learning | Mass Spectrometry Reviews |  | PCA, IMS data analysis,  Project Link: [BioMap](https://www.ms-imaging.org/biomap/), review paper |
-|[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library||||[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
+|[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library| | |[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
 
 ---
 

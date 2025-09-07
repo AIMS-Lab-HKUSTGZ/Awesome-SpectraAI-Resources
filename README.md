@@ -14,7 +14,7 @@
  
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
-| [Inferring CID by Estimating Breakage Events and Reconstructing their Graphs ](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.3c04654) | GNN, Transformer | analytical chemistry | [![Star](https://img.shields.io/github/stars/coleygroup/ms-pred.svg?style=social&label=Star)](https://github.com/coleygroup/ms-pred)  |ICEBERG|
+| [Inferring CID by Estimating Breakage Events and Reconstructing their Graphs](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.3c04654) | GNN, Transformer | analytical chemistry, NeurIPS2023 | [![Star](https://img.shields.io/github/stars/coleygroup/ms-pred.svg?style=social&label=Star)](https://github.com/coleygroup/ms-pred)  |ICEBERG, [SCARF](https://papers.neurips.cc/paper_files/paper/2023/file/97d596ca21d0751ba2c633bad696cf7f-Paper-Conference.pdf)|
 | [Efficiently predicting high resolution mass spectra with graph neural networks](https://proceedings.mlr.press/v202/murphy23a.html) | GNN | ICML2023 | [![Star](https://img.shields.io/github/stars/murphy17/graff-ms.svg?style=social&label=Star)](https://github.com/murphy17/graff-ms)  |GRAFF-MS |
 | [CFM-ID 4.0: More Accurate ESI MS/MS Spectral Prediction and Compound Identification](https://pubs.acs.org/doi/pdf/10.1021/acs.analchem.1c01465?ref=article_openPDF) | Machine Learning Model | analytical chemistry |  | CFM-ID 4.0, [project website](http://cfmid4.wishartlab.com/) |
 | [Computational prediction of electron ionization mass spectra to assist in GC-MS compound identification](https://pubs.acs.org/doi/pdf/10.1021/acs.analchem.6b01622?ref=article_openPDF) | Artificial Neural Network, Probabilistic Generative Model | analytical chemistry | | CFM-EI,old version of CFM-ID, [project website](http://cfmid4.wishartlab.com/) |
@@ -72,6 +72,8 @@
 | [An end-to-end deep learning method for mass spectrometry data analysis to reveal disease-specific metabolic profiles](https://doi.org/10.1038/s41467-024-51433-3) | Deep Learning | Nature Communications | [![Star](https://img.shields.io/github/stars/yjdeng9/DeepMSProfiler.svg?style=social&label=Star)](https://github.com/yjdeng9/DeepMSProfiler) | DeepMSProfiler, disease-specific metabolic profiling |
 | [Trackable and scalable LC-MS metabolomics data processing using asari](https://doi.org/10.1038/s41467-023-39889-1) | open-source software tool | Nature Communications | [![Star](https://img.shields.io/github/stars/shuzhao-li/asari.svg?style=social&label=Star)](https://github.com/shuzhao-li/asari) | asari, LC-MS data processing, Project Link: [https://pypi.org/project/asari-metabolomics/](https://pypi.org/project/asari-metabolomics/) |
 |[Automatic Compound Annotation from Mass Spectrometry Data Using MAGMa](https://pmc.ncbi.nlm.nih.gov/articles/PMC4321337/pdf/massspectrometry-3-Special_Issue_2-S0033.pdf)|Ranking algorithm| Mass Spectrom (Tokyo)||Peak list annotation, MAGMa|
+|[MIST-CF: Chemical Formula Inference from Tandem Mass Spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082)|  Spectrum Transformers|Journal of Chemical Information and Modeling|[![Star](https://img.shields.io/github/stars/samgoldman97/mist-cf.svg?style=social&label=Star)](https://github.com/samgoldman97/mist-cf)|Mass Spectra Formula Inference|
+|[Systematic classification of unknown metabolites using high-resolution fragmentation mass spectra](https://www.nature.com/articles/s41587-020-0740-8)|Deep Neural Network|Nature Biotechnology|[![Star](https://img.shields.io/github/stars/boecker-lab/sirius-libs.svg?style=social&label=Star)]( https://github.com/boecker-lab/sirius-libs)| compound class annotation, CANOPUS|
 ### 1.4 Datasets, Benchmark and Review
  | Name | Type | Venue | Website | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
@@ -89,7 +91,7 @@
 | [Searching molecular structure databases using tandem MS data: are we there yet?](https://doi.org/10.1016/j.cbpa.2016.12.010) | Automated Method, Machine Learning | Current Opinion in Chemical Biology |  | CFM-ID, MetFrag, MAGMa, FingerID, CSI:FingerID, MetFrag2.2, MAGMa+, MSFINDER, MIDAS, IOKR version of CSI:FingerID, metabolite identification, review paper |
 | [Unsupervised machine learning for exploratory data analysis in imaging mass spectrometry](https://doi.org/10.1002/mas.21602) | Unsupervised machine learning | Mass Spectrometry Reviews |  | PCA, IMS data analysis,  Project Link: [BioMap](https://www.ms-imaging.org/biomap/), review paper |
 |[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library| | |[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
-
+|[NPLIB1](https://github.com/samgoldman97/mist)|dataset,benchmark| | |[data source](https://github.com/samgoldman97/mist), deriving from [CANOPUS](https://www.nature.com/articles/s41587-020-0740-8) by filtering to [M+H] spectra |
 ---
 
 ## 2. Mass Spectrometry (Peptides)

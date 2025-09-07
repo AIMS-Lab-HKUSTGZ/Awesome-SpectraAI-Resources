@@ -157,21 +157,33 @@
 | [Graphormer-IR: Graph Transformers Predict Experimental IR Spectra (2024)](https://doi.org/10.1021/acs.jcim.4c00378) | J. Chem. Inf. Model. | DL (Graph Transformer + MLP, 1D-CNN) | SMILES+Phase | NIST, AIST, Coblentz | [![Star](https://img.shields.io/github/stars/HopkinsLaboratory/Graphormer-IR.svg?style=social&label=Star)](https://github.com/HopkinsLaboratory/Graphormer-IR) | <a href="https://zenodo.org/records/10790190"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 | [Neural Network Approach for Predicting Infrared Spectra from 3D Molecular Structure (2024)](https://doi.org/10.1016/j.cplett.2024.141603) | Chem. Phys. Lett. | DL (MPNN) | 3D Molecular Structure | NIST | [![Star](https://img.shields.io/github/stars/allouchear/NNMol-IR.svg?style=social&label=Star)](https://github.com/allouchear/NNMol-IR) | <a href="https://zenodo.org/records/13681778"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 | [Infrared Spectra Prediction for Functional Group Region Utilizing a Machine Learning Approach with Structural Neighboring Mechanism (2024)](https://doi.org/10.1021/acs.analchem.4c01972) | Anal. Chem. | ML | SMILES | CIAD | [![Star](https://img.shields.io/github/stars/ChengchunLiu/IR-DIAZO-KETONE.svg?style=social&label=Star)](https://github.com/ChengchunLiu/IR-DIAZO-KETONE) | -- |
-| [Infrared Spectra Prediction Using Attention-Based Graph Neural Networks (2024)](https://doi.org/10.1039/d3dd00254c) | Digital Discovery | DL (GNN) | SMILES | NIST | [![Star](https://img.shields.io/github/stars/nj-saquer/IR-Spectra-Prediction-Graph-Models.svg?style=social&label=Star)](https://github.com/nj-saquer/IR-Spectra-Prediction-Graph-Models) | -- |
+| [Infrared Spectra Prediction Using Attention-Based Graph Neural Networks (2024)](https://doi.org/10.1039/d3dd00254c) | Digital Discovery | DL (GNN) | SMILES | NIST | [![Star](https://img.shields.io/github/stars/nj-saquer/IR-Spectra-Prediction-Graph-Models.svg?style=social&label=Star)](https://github.com/nj-saquer/IR-Spectra-Prediction-Graph-Models) | — |
 | [Neural Network Approach for Predicting Infrared Spectra from 3D Molecular Structure (2024)](https://arxiv.org/abs/2405.05737) | arXiv | DL (MPNN) | 3D Molecular Structure | NIST | [![Star](https://img.shields.io/github/stars/allouchear/NNMol-IR.svg?style=social&label=Star)](https://github.com/allouchear/NNMol-IR) | <a href="https://zenodo.org/records/13681778"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 | [Prediction of the Infrared Absorbance Intensities and Frequencies of Hydrocarbons (2024)](https://doi.org/10.1021/acs.jpca.4c06745) | J. Phys. Chem. A | DL (MPNN + FFNN) | SMILES | GDB | <a href="https://zenodo.org/records/13844305"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | <a href="https://zenodo.org/records/13844305"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
-| [Unlocking the Potential of Machine Learning in Enhancing Quantum Chemical Calculations for Infrared Spectral Prediction (2025)](https://doi.org/10.1021/acsomega.5c02405) | ACS Omega | ML (Multioutput Regressor + Random Forest Regressor) | 3D Molecular Structure | Gaussian 16 | Supporting Information | -- |
+| [Unlocking the Potential of Machine Learning in Enhancing Quantum Chemical Calculations for Infrared Spectral Prediction (2025)](https://doi.org/10.1021/acsomega.5c02405) | ACS Omega | ML (Multioutput Regressor + Random Forest Regressor) | 3D Molecular Structure | Gaussian 16 | Supporting Information | — |
 
 
 
 ### 4.2 Inverse Task (Spectrum → Molecule)  
 *Molecular characterization from infrared spectra*  
-| Paper Title & Link | Venue | Method Type | Output |  Data Source | Code | CKPT |
+| Paper Title & Link | Venue | Method Type | Output | Data Source | Code | CKPT |
 |------------|---------------|-------|-------|--------------------|------|------|
 | [Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation (2024)](https://kehanguo2.github.io/Molpuzzle.io/) | NeurIPS2024 | LLM (GPT‑4o, Claude‑3, Gemini, etc.) | SMILES | — | [![Star](https://img.shields.io/github/stars/KehanGuo2/MolPuzzle.svg?style=social&label=Star)](https://github.com/KehanGuo2/MolPuzzle) | — |
 | [Leveraging Infrared Spectroscopy for Automated Structure Elucidation (2024)](https://doi.org/10.1038/s42004-024-01341-w) | Commun. Chem. | DL (Transformer) | SMILES | **Simulated:** PubChem<br>**Experimental:** NIST | [![Star](https://img.shields.io/github/stars/rxn4chemistry/rxn-ir-to-structure.svg?style=social&label=Star)](https://github.com/rxn4chemistry/rxn-ir-to-structure) | <a href="https://zenodo.org/records/7928396"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 | [Transformer-Based Models for Predicting Molecular Structures from Infrared Spectra Using Patch-Based Self-Attention (2025)](https://doi.org/10.1021/acs.jpca.4c05665) | J. Phys. Chem. A | DL (Transformer + Patch-based Self-Attention) | SMILES | **Simulated:** PubChem, QM9S <br>**Experimental:** NIST  | [![Star](https://img.shields.io/github/stars/wenjin886/PatchBasedSelfAttention.svg?style=social&label=Star)](https://github.com/wenjin886/PatchBasedSelfAttention) | <a href="https://zenodo.org/records/12789777"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> |
 | [Revolutionizing Spectroscopic Analysis Using Sequence-to-Sequence Models I: From Infrared Spectra to Molecular Structures (2025)](https://doi.org/10.26434/chemrxiv-2025-n4q84) | ChemRxiv | DL (GRU, LSTM, GPT, Transformer) | SELFIES | QM9, PC9 | — | — |
+
+### 4.3 IR Datasets
+| Dataset Name & Link | Size | Data Source | Real / Simulated | Allowed Elements | 
+|---------------------|----------------|------------------|-----|----------------------|
+| <a href="https://zenodo.org/records/4698943"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 85,232 | PubChem (SMILES for molecular structures) | Simulated (GFN2-xTB) | C, H, O, N, S, P, Si, F, Cl, Br, I |
+| <a href="https://zenodo.org/records/13844305"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 31,570 | GDB (SMILES for molecular structures) | Simulated (DFT) | C, H |
+| <a href="https://zenodo.org/records/11611178"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 794,403 | USPTO reaction dataset (SMILES for molecular structures) | Simulated (MD) | C, H, O, N, S, P, Si, B, F, Cl, Br, I |
+| <a href="https://zenodo.org/records/7928396"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 634,585 | PubChem (SMILES for molecular structures) | Simulated (MD + PCFF forcefield) | C, H, O, N, S, P, F, Cl, Br, I |
+| QM9S <a href="https://figshare.com/articles/dataset/QM9S_dataset/24235333"><img src="https://api.iconify.design/academicons:figshare.svg" width="20"/></a> | 133,885 | QM9 (re-optimized geometries) | Simulated (DFT) | C, H, O, N, F  |
+
+
+
 
 
 ---

@@ -174,13 +174,18 @@
 | [Revolutionizing Spectroscopic Analysis Using Sequence-to-Sequence Models I: From Infrared Spectra to Molecular Structures (2025)](https://doi.org/10.26434/chemrxiv-2025-n4q84) | ChemRxiv | DL (GRU, LSTM, GPT, Transformer) | SELFIES | QM9, PC9 | — | — |
 
 ### 4.3 IR Datasets
-| Dataset Name & Link | Size | Data Source | Real / Simulated | Allowed Elements | 
+| Dataset Name & Link | Size | Data Source | Real / Simulated | Element Coverage | 
 |---------------------|----------------|------------------|-----|----------------------|
 | <a href="https://zenodo.org/records/4698943"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 85,232 | PubChem (SMILES for molecular structures) | Simulated (GFN2-xTB) | C, H, O, N, S, P, Si, F, Cl, Br, I |
 | <a href="https://zenodo.org/records/13844305"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 31,570 | GDB (SMILES for molecular structures) | Simulated (DFT) | C, H |
 | <a href="https://zenodo.org/records/11611178"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 794,403 | USPTO reaction dataset (SMILES for molecular structures) | Simulated (MD) | C, H, O, N, S, P, Si, B, F, Cl, Br, I |
 | <a href="https://zenodo.org/records/7928396"><img src="https://api.iconify.design/academicons:zenodo.svg" width="20"/></a> | 634,585 | PubChem (SMILES for molecular structures) | Simulated (MD + PCFF forcefield) | C, H, O, N, S, P, F, Cl, Br, I |
 | QM9S <a href="https://figshare.com/articles/dataset/QM9S_dataset/24235333"><img src="https://api.iconify.design/academicons:figshare.svg" width="20"/></a> | 133,885 | QM9 (re-optimized geometries) | Simulated (DFT) | C, H, O, N, F  |
+| SRD 35 <a href="https://www.nist.gov/srd/nist-standard-reference-database-35"><img src="https://cdn.worldvectorlogo.com/logos/nist.svg" width="20"/></a> | 5,228 (gas-phase) | — | Real | — |
+| NIST Chemistry WebBook <a href="https://webbook.nist.gov/chemistry/"><img src="https://cdn.worldvectorlogo.com/logos/nist.svg" width="20"/></a> | >16,000 | — | Real | — |
+| Coblentz Society Spectral Database <a href="https://webbook.nist.gov/chemistry/coblentz/"><img src="https://cdn.worldvectorlogo.com/logos/nist.svg" width="20"/></a> | >9,500 | — | Real | — |
+| [NWIR](https://www.pnnl.gov/publications/northwest-infrared-nwir-gas-phase-spectral-database-industrial-and-environmental) | ~1,000–1,500 (gas-phase) | — | Real | — |
+| [AIST SDBS](https://sdbs.db.aist.go.jp) | ~54,100 | — | Real | — |
 
 
 

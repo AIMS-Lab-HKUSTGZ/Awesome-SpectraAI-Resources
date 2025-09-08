@@ -107,15 +107,16 @@
 
 ### 3.3 NMR Datasets & Benchmarks
 
-\| Name & Link | Type | Venue/Year | Size / Modality | Real / Sim | Download |
-\|---|---|---|---|---|---|---|
-\| Multimodal Spectroscopic Dataset (includes NMR) ([NeurIPS 2024 Datasets & Benchmarks](https://proceedings.neurips.cc/paper_files/paper/2024/file/e38e60b33bb2c6993e0865160cdb5cf1-Paper-Datasets_and_Benchmarks_Track.p)) | Benchmark (multi-spectra) | NeurIPS 2024 | 7.9e5+ synthetic spectra | Sim | Zenodo (via paper) |
-\| IR–NMR Multimodal Computational Spectra Dataset ([Nature Sci. Data 2025](https://www.nature.com/articles/s41597-025-05729-8)) | Dataset (IR + NMR) | 2025 | 177,461 spectra | Sim (MD + DFT + ML) | [Zenodo](https://zenodo.org/records/16417648) |
-\| NMRShiftDB2 | Database (small molecules) | — | \~50k; ¹H/¹³C | Real | Open |
-\| BMRB | Database (bio-molecules) | — | >13k biomolecules; ¹H/¹³C/¹⁵N… | Real | FTP/STAR |
-\| SDBS | Database (multi-modal) | — | \~14k; ¹H/¹³C/IR/MS/UV | Real | Crawl/script |
-\| 2DNMRGym (HSQC) | Simulated 2D dataset | 2024 | 22k+ HSQC | Sim | HF/Zenodo |
-\| NMRMixDB | Mixtures | — | \~3k; ¹H | Real | Open |
+| Name & Link                                                                                                                                                                          | Type                       | Venue/Year            | Size / Modality                | Real / Sim          | Download                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | --------------------- | ------------------------------ | ------------------- | ------------------------------------------------------ |
+| [Multimodal Spectroscopic Dataset (includes NMR)](https://proceedings.neurips.cc/paper_files/paper/2024/file/e38e60b33bb2c6993e0865160cdb5cf1-Paper-Datasets_and_Benchmarks_Track.p) | Benchmark (multi-spectra)  | NeurIPS 2024          | 7.9e5+ synthetic spectra       | Sim                 | Zenodo (via paper)                                     |
+| [IR–NMR Multimodal Computational Spectra Dataset](https://www.nature.com/articles/s41597-025-05729-8)                                                                                | Dataset (IR + NMR)         | Nature Sci. Data 2025 | 177,461 spectra                | Sim (MD + DFT + ML) | [Zenodo](https://zenodo.org/records/16417648)          |
+| [NMRShiftDB2](https://nmrshiftdb.nmr.uni-koeln.de/)                                                                                                                                  | Database (small molecules) | —                     | \~50k; ¹H/¹³C                  | Real                | Open                                                   |
+| [BMRB](https://bmrb.io/)                                                                                                                                                             | Database (bio-molecules)   | —                     | >13k biomolecules; ¹H/¹³C/¹⁵N… | Real                | FTP/STAR                                               |
+| [SDBS](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi)                                                                                                                        | Database (multi-modal)     | —                     | \~14k; ¹H/¹³C/IR/MS/UV         | Real                | Crawl/script                                           |
+| [2DNMRGym (HSQC)](https://arxiv.org/abs/2405.18181)                                                                                                                                  | Simulated 2D dataset       | 2024                  | 22k+ HSQC                      | Sim                 | [HuggingFace/Zenodo](https://huggingface.co/datasets/) |
+| [NMRMixDB](https://nmrmixdb.github.io/)                                                                                                                                              | Mixtures                   | —                     | \~3k; ¹H                       | Real                | Open                                                   |
+
 
 ---
 

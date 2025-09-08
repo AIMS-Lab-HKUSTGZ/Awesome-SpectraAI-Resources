@@ -75,47 +75,68 @@
 
 ## 3. NMR Spectroscopy (Small Molecules)
 
-### 3.1 Forward Task (Molecule → Spectrum)  
-*Prediction of NMR spectra from molecular structures*  
-#### 📊 Forward Task Method Table
-| Paper Title & Link | Method Type | Data Source | Performance Metric | Notes |
-|--------------------|------------------|--------------------|--------------------|------------------------------------------|
-| [Prediction of chemical shift in NMR: A review](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/mrc.5234) | Empirical | - | Rule-based | Interpretable, less generalizable |
-| [iShiftML: Highly Accurate Prediction of NMR Chemical Shifts](https://arxiv.org/abs/2306.08269) | Hybrid ML + QM | QM descriptors | < 0.2 ppm error | Fast inference, needs QM feature prep |
-| [NMR shift prediction from small data quantities](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00785-x) | ML | NMRShiftDB2 | MAE (ppm) | Good scalability |
-| [NMR-spectrum prediction for dynamic molecules](https://pubs.aip.org/aip/jcp/article/158/19/194108/2891394) | ML-Dynamics | Simulated ensembles | Time-avg ppm | Accounts for flexible molecules |
-| [Machine learning in NMR spectroscopy](https://www.sciencedirect.com/science/article/pii/S0079656525000196) | DL | NMRShiftDB2 | TBD | Multitask joint learning |
+### 3.1 Forward Task (Molecule → Spectrum)
 
+*Prediction of NMR spectra / chemical shifts from molecular structures*
+
+| Paper Title & Link                                                                                                                                         | Method Type                    | Venue/Year      | Data Source             | Metric       | Code / Data                                                                                                                                     | Notes                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | ----------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Towards a Unified Benchmark and Framework for Deep Learning-Based Prediction of NMR Chemical Shifts ([arXiv:2306.13549](https://arxiv.org/abs/2306.13549)) | Foundation pretrain + finetune | arXiv 2023      | 3D molecular structures | MAE (ppm)    | [NMRNet](https://github.com/Colin-Jay/NMRNet) · [Zenodo](https://zenodo.org/records/13317524)                                                   | Masked pretraining on 3D; unified benchmark framing |
+| Prediction of chemical shift in NMR: A review                                                                                                              | Review                         | —               | —                       | —            | —                                                                                                                                               | Survey of methods & datasets                        |
+| iShiftML: Highly Accurate Prediction of NMR Chemical Shifts                                                                                                | Hybrid ML + QM                 | —               | QM descriptors          | < 0.2 ppm    | —                                                                                                                                               | Fast inference; QM features required                |
+| NMR shift prediction from small data quantities                                                                                                            | ML                             | —               | NMRShiftDB2             | MAE (ppm)    | —                                                                                                                                               | Small-data learning                                 |
+| NMR-spectrum prediction for dynamic molecules                                                                                                              | ML-Dynamics                    | —               | Simulated ensembles     | Time-avg ppm | —                                                                                                                                               | Conformational averaging                            |
+| Machine learning in NMR spectroscopy                                                                                                                       | Review (DL)                    | —               | NMRShiftDB2             | —            | —                                                                                                                                               | Multitask trends & outlook                          |
+| TransPeakNet: Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning ([GitHub](https://github.com/siriusxiao62/2dNMR))      | GNN + Multitask                | Chem paper 2023 | Graph-based input       | 2D spectra   | [Code](https://github.com/siriusxiao62/2dNMR) · [Data](https://drive.google.com/drive/folders/1wQxk7mnIwi5aAGaF34_hk7xo6IeEh-IE?usp=drive_link) | 1D→2D solvent-aware prediction                      |
 
 ---
 
+### 3.2 Inverse Task (Spectrum → Molecule)
 
-### 3.2 Inverse Task: Spectrum → Molecule
-#### 📊 Inverse Task Method Table
-| Paper Title & Link | Method Type | Input Data | Accuracy / Metric | Notes |
-|--------------------|-------------|------------|------------------|-------|
-| [A Bayesian approach to structural elucidation using crystalline-state solid‑state NMR and probabilistic inference (2019)](https://arxiv.org/abs/1909.00870) | Bayesian | Solid‑state NMR | Top‑5 accuracy | Requires crystal information |
-| [Accurate and efficient structure elucidation from routine one‑dimensional NMR spectra using multitask machine learning (2024)](https://arxiv.org/abs/2408.08284) | DL (CNN + Transformer) | 1D spectra | Top‑1 ~70% | No need for 2D spectra |
-| [Deep reinforcement learning and graph convolutional networks for molecular inverse problem of NMR (2022)](https://pubs.acs.org/doi/10.1021/acs.jpclett.2c00624) | RL (MCTS + GCN) | Shift table | Top‑3 ~80% | Effective for small molecules |
-| [High‑resolution iterative Full Spin Analysis (HiFSA) for small molecules using PERCH (2015)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3812940/) | Spectral ID | Simulated spectra | — | Useful for detailed peak assignment |
-| [Automated mixture component identification via wavelet packet transform and optimization (2023)](https://www.mdpi.com/1420-3049/28/2/792) | Mixture ID (WPT + Optimization) | Mixtures | Component-level accuracy | Robust for complex sample spectra | 
+| Paper Title & Link                                                                                                                                                                                                                                                                                                           | Method Type                     | Venue/Year                | Input                  | Metric             | Code / Data | Notes                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------- | ---------------------- | ------------------ | ----------- | ----------------------------------------------------------------------- |
+| Accurate and Efficient Structure Elucidation from Routine One-Dimensional NMR Spectra Using Multitask Machine Learning ([arXiv:2408.08284](https://arxiv.org/pdf/2408.08284))                                                                                                                                                | CNN + Transformer (multitask)   | arXiv 2024                | 1D spectra             | Top-1 / Top-k      | —           | High accuracy with 1D only                                              |
+| Learning the Language of NMR Structure Elucidation from NMR Spectra Using Transformer Models ([ChemRxiv 2023](https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/64d5e4ccdfabaf06ff1763ef/original/learning-the-language-of-nmr-structure-elucidation-from-nmr-spectra-using-transformer-models.pdf)) | Transformer (sequence modeling) | ChemRxiv 2023             | 1D spectra             | —                  | —           | Treats NMR as a language; structure reasoning                           |
+| DeepSAT: Learning Molecular Structures from NMR Data                                                                                                                                                                                                                                                                         | Multimodal DL                   | —                         | NMR spectra            | Structure accuracy | —           | Uses NPAtlas, NPASS, GNPS etc.; multimodal molecular structure learning |
+| NMR Foundation Model for Structure Prediction ([NeurIPS 2024 Poster #97441](https://neurips.cc/virtual/2024/poster/97441))                                                                                                                                                                                                   | Transformer-based FM            | NeurIPS 2024              | 1D/2D NMR              | Accuracy (Top-k)   | —           | Early spectra foundation model in AI venue                              |
+| Bayesian approach to structural elucidation with crystalline-state SSNMR ([arXiv:1909.00870](https://arxiv.org/abs/1909.00870))                                                                                                                                                                                              | Bayesian / probabilistic        | arXiv 2019                | Solid-state NMR        | Top-5              | —           | Requires crystal info                                                   |
+| Deep RL + GCN for NMR inverse problem ([J. Phys. Chem. Lett. 2022](https://pubs.acs.org/doi/10.1021/acs.jpclett.2c00624))                                                                                                                                                                                                    | RL (MCTS) + GCN                 | J. Phys. Chem. Lett. 2022 | Shift table            | Top-3              | —           | Effective for small molecules                                           |
+| HiFSA / PERCH (automated spin analysis)                                                                                                                                                                                                                                                                                      | Physics-based                   | —                         | Simulated/exp. spectra | —                  | —           | Detailed peak assignment                                                |
 
-### 🧬 NMR Dataset Comparison Table
-
-
-| Dataset Name & Link | Spectrum Count | Real / Simulated | Multi-modal Spectra | Labeled | Downloadable / Crawlable |
-|---------------------|----------------|------------------|----------------------|---------|---------------------------|
-| [NMRShiftDB2](https://nmrshiftdb.nmr.uni-koeln.de/) | ~50,000 | Real | ¹H, ¹³C | ✅ Yes | ✅ Yes (open source) |
-| [BMRB](https://bmrb.io/) | >13,000 biomolecules | Real | ¹H, ¹³C, ¹⁵N, ²H, ³¹P | ✅ Yes | ✅ Yes (FTP/STAR) |
-| [SDBS](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi) | ~14,000 | Real | ¹H, ¹³C, IR, MS, UV | ✅ Yes | ✅ Yes (Crawl Script Needed) |
-| [QM9-NMR (Simulated)](https://doi.org/10.1021/acs.jcim.1c01160) | 130,000+ | Simulated (DFT) | ¹H, ¹³C | ✅ Yes | ✅ Yes (via DOI or GitHub) |
-| [2DNMRGym (2024)](https://arxiv.org/abs/2405.18181) | 22,000 2D HSQC | Simulated | HSQC (2D) | ✅ Yes | ✅ Yes (HuggingFace) |
-| [NMRMixDB](https://nmrmixdb.github.io/) | ~3,000 mixtures | Real | ¹H | ✅ Yes (with labels) | ✅ Yes |
-| [NMRPredBench](https://github.com/ur-whitelab/NMRPredBench) | ~3,000 | Real + Simulated | ¹H, ¹³C | ✅ Yes | ✅ Yes (GitHub) |
-[MolAid](https://mol.org/) | ~840K+ | Experimental | Multi-property | ✅ Yes |  ❌ No(API Chared) | Chinese chemical big data platform |
-| [NIST WebBook](https://webbook.nist.gov/) | ~700K+ | Experimental | ¹H, ¹³C etc. | ✅ Yes | ✅ Yes (Need Search Key) | NIST-standardized spectral database |
-| [PubChem](https://pubchem.ncbi.nlm.nih.gov/) | ~100M+ | Experimental + Predicted | Full compound attributes | ✅ Yes | ✅ Yes (API) | Largest open chemical database |
 ---
+
+### 3.3 NMR Datasets & Benchmarks
+
+\| Name & Link | Type | Venue/Year | Size / Modality | Real / Sim | Download |
+\|---|---|---|---|---|---|---|
+\| Multimodal Spectroscopic Dataset (includes NMR) ([NeurIPS 2024 Datasets & Benchmarks](https://proceedings.neurips.cc/paper_files/paper/2024/file/e38e60b33bb2c6993e0865160cdb5cf1-Paper-Datasets_and_Benchmarks_Track.p)) | Benchmark (multi-spectra) | NeurIPS 2024 | 7.9e5+ synthetic spectra | Sim | Zenodo (via paper) |
+\| IR–NMR Multimodal Computational Spectra Dataset ([Nature Sci. Data 2025](https://www.nature.com/articles/s41597-025-05729-8)) | Dataset (IR + NMR) | 2025 | 177,461 spectra | Sim (MD + DFT + ML) | [Zenodo](https://zenodo.org/records/16417648) |
+\| NMRShiftDB2 | Database (small molecules) | — | \~50k; ¹H/¹³C | Real | Open |
+\| BMRB | Database (bio-molecules) | — | >13k biomolecules; ¹H/¹³C/¹⁵N… | Real | FTP/STAR |
+\| SDBS | Database (multi-modal) | — | \~14k; ¹H/¹³C/IR/MS/UV | Real | Crawl/script |
+\| 2DNMRGym (HSQC) | Simulated 2D dataset | 2024 | 22k+ HSQC | Sim | HF/Zenodo |
+\| NMRMixDB | Mixtures | — | \~3k; ¹H | Real | Open |
+
+---
+
+### 3.4 Clustering & Representation Learning for NMR
+
+| Paper Title & Link                                                                                                     | Method                      | Venue/Year | Task                       | Notes                        |
+| ---------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- | -------------------------- | ---------------------------- |
+| Statistical HOmogeneous Cluster SpectroscopY (SHOCSY) ([Anal. Chem. 2014](https://pubs.acs.org/doi/10.1021/ac500161k)) | Statistical clustering      | 2014       | ¹H metabolomics clustering | Classic baseline             |
+| Sparse Convex Wavelet Clustering (includes NMR signals)                                                                | Wavelet + convex clustering | arXiv      | Signal clustering          | Joint denoising + clustering |
+| Deep representation learning for NMR spectral clustering                                                               | Autoencoder / DL            | —          | Spectral clustering        | DL embedding → K-means/HC    |
+
+---
+
+### 3.5 Foundation Models & Chemistry LMs related to NMR
+
+| Model / Paper                | Family                   | Venue/Year         | Link                                            | Notes                                                           |
+| ---------------------------- | ------------------------ | ------------------ | ----------------------------------------------- | --------------------------------------------------------------- |
+| ChemGPT                      | Large chemistry LM       | —                  | —                                               | Molecular generative & reasoning; spectra-to-structure transfer |
+| DETANet                      | DL architecture          | —                  | —                                               | Chemistry perception; potential for spectra-conditioned tasks   |
+| DreaMS (MS foundation model) | Transformer (spectra FM) | Nat. Biotech. 2025 | [GitHub](https://github.com/pluskal-lab/DreaMS) | Cross-modal FM idea transferrable to NMR                        |
+
 
 
 ### 📚 Synthetic NMR Papers & Datasets

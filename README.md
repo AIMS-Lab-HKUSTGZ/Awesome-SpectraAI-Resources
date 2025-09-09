@@ -7,6 +7,13 @@
 
 ---
 
+- [1. Mass Spectrometry (Small Molecules)](#1-mass-spectrometry-small-molecules)
+- [2. Mass Spectrometry (Peptides)](#2-mass-spectrometry-peptides)
+- [3. NMR Spectroscopy (Small Molecules)](#3-nmr-spectroscopy-small-molecules)
+- [4. IR Spectroscopy (Small Molecules)](#4-ir-spectroscopy-small-molecules)
+- [5. Multimodal Spectroscopy (Small Molecules)](#5-multimodal-spectroscopy-small-molecules)
+- [6. X-ray Diffraction (XRD) (Crystals)](#6-x-ray-diffraction-xrd-crystals)
+
 ## 1. Mass Spectrometry (Small Molecules)
 
 ### 1.1 Forward Task (Molecule → Spectrum)  

@@ -253,6 +253,18 @@
 | [NWIR](https://www.pnnl.gov/publications/northwest-infrared-nwir-gas-phase-spectral-database-industrial-and-environmental) | ~1,000–1,500 (gas-phase) | — | Real | — |
 | [AIST SDBS](https://sdbs.db.aist.go.jp) | ~54,100 | — | Real | — |
 
+### 4.4 General Tools
+| Tool  & Link      | Type                          | Main Functions / Uses                                      | 
+|--------------------|-------------------------------|------------------------------------------------------------|
+| RDKit [![Star](https://img.shields.io/github/stars/rdkit/rdkit.svg?style=social&label=Star)](https://github.com/rdkit/rdkit) | Open-source library (Python/C++) | Molecular descriptors for IR–structure fusion, Morgan/ECFP fingerprints for IR-guided search, SMARTS substructure from IR functional-group hints, Conformers + MMFF/UFF for vibrational context, InChI/SMILES I/O to link spectra and structures |
+| Psi4  [![Star](https://img.shields.io/github/stars/psi4/psi4.svg?style=social&label=Star)](https://github.com/psi4/psi4) | Open-source library (Python/C++)  | High‑accuracy, open‑source ab initio quantum chemistry suite for molecular properties |
+| GFN2-xTB [![Star](https://img.shields.io/github/stars/grimme-lab/xtb.svg?style=social&label=Star)](https://github.com/grimme-lab/xtb)  |  Open-source semiempirical QM (Fortran/Python) | Fast IR frequency estimation, IR peak-to-structure attribution, Conformer effects on IR bands, Batch geometry preparation, Solvent-adjusted IR shifts |
+| cclib [![Star](https://img.shields.io/github/stars/cclib/cclib.svg?style=social&label=Star)](https://github.com/cclib/cclib) | Open-source library (Python) | Provides parsers for output files of computational chemistry packages|
+| SELFIES [![Star](https://img.shields.io/github/stars/aspuru-guzik-group/selfies.svg?style=social&label=Star)](https://github.com/aspuru-guzik-group/selfies) | Open-source library (Python)  | SMILES↔SELFIES conversion   |
+| [Open Babel](https://openbabel.org)     | Open-source chemistry toolbox (C++/Python) | Format conversion, 3D generation and conformer search (MMFF94/UFF), SMARTS substructure and fingerprints (FP2/FP3/MACCS)|
+| [Gaussian 16](https://gaussian.com/g16) | Commercial quantum chemistry software | DFT IR frequencies/intensities, Harmonic and anharmonic IR (VPT2), Normal‑mode peak assignment, Solvent models (PCM/SMD) for IR |
+| [ChemCraft](https://www.chemcraftprog.com/)     | Commercial visualization software | Visualize vibrational spectra with Lorentzian/Gaussian broadening, Compare calculated vs. experimental spectra, View MOs/SCF graphs, Parse outputs from Gaussian/ORCA/GAMESS/NWChem etc. |
+| [Q‑Chem](https://www.q-chem.com/)   | Commercial quantum chemistry software   | DFT IR frequencies/intensities, Harmonic and anharmonic IR (VPT2/VCI/TOSH), Normal‑mode and Raman analysis|
 
 
 

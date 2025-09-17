@@ -275,9 +275,40 @@
 ## 5. Multimodal Spectroscopy (Small Molecules)
 ### 5.1 Forward Task (Molecule → Multiple Spectra)
 *Joint prediction of multiple spectral modalities from molecular structures*
+| Paper Title & Link | Modalities | Method Type | Venue/Year | Code | Notes |
+|---|---|---|---|---|---|
+| [Unraveling Molecular Structure: A Multimodal Spectroscopic Dataset for Chemistry](https://proceedings.neurips.cc/paper_files/paper/2024/file/e38e60b33bb2c6993e0865160cdb5cf1-Paper-Datasets_and_Benchmarks_Track.pdf) | IR + MS + ^1H/^13C/HSQC-NMR (simulated) | Dataset + baselines (CNN/XGBoost) | NeurIPS D&B 2024 | [![Star](https://img.shields.io/github/stars/rxn4chemistry/multimodal-spectroscopic-dataset.svg?style=social&label=Star)](https://github.com/rxn4chemistry/multimodal-spectroscopic-dataset) | Provides ~790k multimodal spectra and forward-prediction baselines to pretrain joint predictors. |
+| [IR–NMR Multimodal Computational Spectra Dataset](https://www.nature.com/articles/s41597-025-05729-8) | IR + NMR (simulated) | Dataset (MD/DFT/ML) | Sci. Data 2025 | — | Curated paired IR–NMR set enabling multi-task forward models and cross-modal transfer. |
 
 ### 5.2 Inverse Task (Multiple Spectra → Molecule)
 *Multimodal integration for enhanced molecular identification*
+
+| Paper Title & Link | Modalities | Method Type | Venue/Year | Code | Notes |
+|---|---|---|---|---|---|
+| [A Transformer-Based Generative Chemical Language AI Model for Structural Elucidation of Organic Compounds](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-025-01016-1) | IR + UV/Vis + ^1H NMR | Encoder–decoder Transformer (generative CASE) | J. Cheminformatics 2025 | — | End-to-end spectra→structure generation; strong single-paper reference for joint use of IR/UV/NMR. |
+| [Leveraging Infrared Spectroscopy for Automated Structure Elucidation](https://www.nature.com/articles/s42004-024-01341-w) | IR | Transformer | Commun. Chem. 2024 | [![Star](https://img.shields.io/github/stars/rxn4chemistry/rxn-ir-to-structure.svg?style=social&label=Star)](https://github.com/rxn4chemistry/rxn-ir-to-structure) | Single-modality IR baseline frequently paired with NMR/MS to form multimodal pipelines. |
+
+
+### 5.3 Representation Learning & Fusion (Model-Agnostic Methods used for Spectra)
+
+| Paper Title & Link | What it Brings | Method Type | Venue/Year | Code | Notes |
+|---|---|---|---|---|---|
+| [Ming-Omni: A Unified Multimodal Model for Perception and Generation](https://arxiv.org/abs/2506.09344) | Unified encoder/decoders; modality-specific MoE routers | MoE-UMM (image/text/audio/video) | arXiv 2025 | [![Star](https://img.shields.io/github/stars/inclusionAI/Ming.svg?style=social&label=Star)](https://github.com/inclusionAI/Ming) | Useful design for preventing cross-modal conflicts when adding spectral modalities as new “experts”. |
+| [Boosting Multimodal Learning via Disentangled Gradient Learning (DGL)](https://arxiv.org/abs/2507.10213) | Decouples encoder vs. fusion optimization to avoid gradient interference | Training framework | arXiv 2025 | [![Star](https://img.shields.io/github/stars/shicaiwei123/ICCV2025-GDL.svg?style=social&label=Star)](https://github.com/shicaiwei123/ICCV2025-GDL) | Practical recipe when IR/NMR/MS encoders underperform once fused. |
+| [I2MoE: Interpretable Multimodal Interaction-aware Mixture-of-Experts](https://arxiv.org/abs/2505.19190) | Interaction-specialized experts + sample-level explanations | MoE fusion | arXiv/ICML 2025 | [![Star](https://img.shields.io/github/stars/Raina-Xin/I2MoE.svg?style=social&label=Star)](https://github.com/Raina-Xin/I2MoE) | Lets you see which modality interactions (e.g., IR×NMR) drive a prediction. |
+| [MM-Embed: Universal Multimodal Retrieval with MLLMs](https://arxiv.org/abs/2411.02571) | Bi-encoder + MLLM re-ranker for flexible text↔image retrieval | Multimodal embeddings | ICLR 2025 | [HF Card](https://huggingface.co/nvidia/MM-Embed) | Template for spectra/text retrieval (e.g., query by IR peaks + structural hints). |
+| **SpecEmbedding: Supervised Contrastive Learning Leads to More Reasonable Spectral Embeddings** | MS spectral encoder with supervised contrastive learning | Transformer encoder + SupCon | *Analytical Chemistry* ASAP 2025 | [![Star](https://img.shields.io/github/stars/sword-nan/SpecEmbedding.svg?style=social&label=Star)](https://github.com/sword-nan/SpecEmbedding) · [Demo](https://huggingface.co/spaces/xp113280/SpecEmbedding) | High-quality MS embeddings usable as one branch in IR+NMR+MS fusion. |
+| [UAE: Can Understanding and Generation Truly Benefit Together — or Just Coexist?](https://arxiv.org/abs/2509.09666) | Unified auto-encoder view (I2T ↔ T2I) with RL to align understanding & generation | Unified multimodal learning (UMM) | arXiv 2025 | [![Star](https://img.shields.io/github/stars/PKU-YuanGroup/UAE.svg?style=social&label=Star)](https://github.com/PKU-YuanGroup/UAE) | Useful recipe for tying inverse (spectra→structure) with forward (structure→spectra) via reconstruction. |
+
+
+### 5.4 Datasets & Benchmarks (Multimodal, Small Molecules)
+| Name & Link | Modalities | Type | Size | Real / Simulated | Website / Code | Notes |
+|---|---|---|---|---|---|---|
+| **Multimodal Spectroscopic Dataset (MSD)** | IR + MS + ^1H/^13C/HSQC-NMR | Benchmark + Dataset | ~790k molecules | Simulated | [Site](https://rxn4chemistry.github.io/multimodal-spectroscopic-dataset/) · [Zenodo](https://zenodo.org/records/11611178) · [GitHub](https://github.com/rxn4chemistry/multimodal-spectroscopic-dataset) | Common pretraining/eval source for multimodal spectral models. |
+| **IR–NMR Multimodal Computational Spectra Dataset** | IR + NMR | Dataset | 177,461 spectra | Simulated | [Article](https://www.nature.com/articles/s41597-025-05729-8) · [Zenodo](https://zenodo.org/records/16417648) | Paired IR–NMR for cross-modal learning and evaluation. |
+| **SDBS (AIST)** | IR + MS + ^1H/^13C-NMR + Raman + ESR | Database | ~34k molecules | Real | [SDBS](https://sdbs.db.aist.go.jp/) | Broad real-world spectra across modalities for validation. |
+| **NIST Chemistry WebBook / SRD-35** | IR (gas-phase) + MS + UV/Vis | Database | 5,228 IR (SRD-35); 16k+ IR & 33k+ MS overall | Real | [WebBook](https://webbook.nist.gov/chemistry/) · [SRD-35](https://www.nist.gov/srd/nist-standard-reference-database-35) | Standard references and downloadable IR libraries. |
+| **SimXRD-4M** *(related)* | Powder XRD | Benchmark + Dataset | 4.06M patterns | Simulated | [OpenReview](https://openreview.net/forum?id=mkuB677eMM) | Not small-molecule spectra, but relevant template for large-scale physics-faithful simulation & benchmarking. |
 
 ---
 

@@ -331,6 +331,9 @@
 ### 6.2 Inverse Task (Pattern → Crystal)  
 *Crystal structure determination from XRD patterns*  
 
+## 7. Spectrum Databases (Usage & API)
+| Name & Link | Modalities | Type | Size | Real / Simulated | Website / Code | Notes |
+|---|---|---|---|---|---|---|
 
 ---
 

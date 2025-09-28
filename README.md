@@ -81,6 +81,7 @@
 |[Automatic Compound Annotation from Mass Spectrometry Data Using MAGMa](https://pmc.ncbi.nlm.nih.gov/articles/PMC4321337/pdf/massspectrometry-3-Special_Issue_2-S0033.pdf)|Ranking algorithm| Mass Spectrom (Tokyo)||Peak list annotation, MAGMa|
 |[MIST-CF: Chemical Formula Inference from Tandem Mass Spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082)|  Spectrum Transformers|Journal of Chemical Information and Modeling|[![Star](https://img.shields.io/github/stars/samgoldman97/mist-cf.svg?style=social&label=Star)](https://github.com/samgoldman97/mist-cf)|Mass Spectra Formula Inference|
 |[Systematic classification of unknown metabolites using high-resolution fragmentation mass spectra](https://www.nature.com/articles/s41587-020-0740-8)|Deep Neural Network|Nature Biotechnology|[![Star](https://img.shields.io/github/stars/boecker-lab/sirius-libs.svg?style=social&label=Star)]( https://github.com/boecker-lab/sirius-libs)| compound class annotation, CANOPUS|
+|[A versatile toolkit for drug metabolism studies with GNPS2: from drug development to clinical monitoring](https://www.nature.com/articles/s41596-025-01237-6)| Mass Spectrum Database | nature protocals | | |
 ### 1.4 Datasets, Benchmark and Review
  | Name | Type | Venue | Website | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|

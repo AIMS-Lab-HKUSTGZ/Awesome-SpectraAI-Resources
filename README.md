@@ -126,6 +126,11 @@
 | [AdaNovo: Adaptive De Novo Peptide Sequencing with Conditional Mutual Information](https://arxiv.org/abs/2403.07013) |Transformer|NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/adanovo_v1)  |AdaNovo |
 | [NovoBench: Benchmarking Deep Learning-based De Novo Peptide Sequencing Methods in Proteomics](https://arxiv.org/abs/2406.11906) | - |NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/NovoBench.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/NovoBench)  |benchmark |
 | [Accurate de novo peptide sequencing using fully convolutional neural networks](https://link.springer.com/article/10.1038/s41467-023-43010-x) | CNN | Nature Communications 2023| [![Star](https://img.shields.io/github/stars/lkytal/PepNet.svg?style=social&label=Star)](https://github.com/lkytal/PepNet)  |PepNet |
+
+### 2.3 Datasets, Benchmark and Review
+ | Paper Title & Link | Method Type | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [AlphaPeptDeep: a modular deep learning framework to predict peptide properties for proteomics](https://www.nature.com/articles/s41467-022-34904-3) | Benchmark | Nature communications |  [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/MannLabs/alphapeptdeep) |  AlphaPeptDeep |
 ---
 
 ## 3. NMR Spectroscopy (Small Molecules)

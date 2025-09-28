@@ -99,7 +99,10 @@
 | [Unsupervised machine learning for exploratory data analysis in imaging mass spectrometry](https://doi.org/10.1002/mas.21602) | Unsupervised machine learning | Mass Spectrometry Reviews |  | PCA, IMS data analysis,  Project Link: [BioMap](https://www.ms-imaging.org/biomap/), review paper |
 |[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library| | |[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
 |[NPLIB1](https://github.com/samgoldman97/mist)|dataset,benchmark| | |[data source](https://github.com/samgoldman97/mist), deriving from [CANOPUS](https://www.nature.com/articles/s41587-020-0740-8) by filtering to [M+H] spectra |
----
+### 1.5 Spectrum Databases (API Usage)
+| Name & Link | Request Type | Description | Return information | API_link |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [GNPS](https://external.gnps2.org/gnpslibraryjson) | html | This gets you all spectra but without peaks. | Spectrum Metadata | [json](https://external.gnps2.org/gnpslibraryjson) |
 
 ## 2. Mass Spectrometry (Peptides)
 
@@ -331,9 +334,6 @@
 ### 6.2 Inverse Task (Pattern → Crystal)  
 *Crystal structure determination from XRD patterns*  
 
-## 7. Spectrum Databases (Usage & API)
-| Name & Link | Modalities | Type | Size | Real / Simulated | Website / Code | Notes |
-|---|---|---|---|---|---|---|
 
 ---
 

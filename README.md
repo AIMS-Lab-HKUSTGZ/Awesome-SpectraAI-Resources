@@ -105,12 +105,22 @@
 
 ### 2.1 Forward Task (Peptides → Spectrum)  
 *Computational methods for predicting peptides mass spectra*  
-
+ | Paper Title & Link | Method Type | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [Full-Spectrum Prediction of Peptides Tandem Mass Spectra using Deep Neural Network](https://pubs.acs.org/doi/10.1021/acs.analchem.9b04867) |CNN|Analytical Chemistry 2020| [![Star](https://img.shields.io/github/stars/lkytal/PredFull.svg?style=social&label=Star)](https://github.com/lkytal/PredFull)  |PredFull |
 
 ### 2.2 Inverse Task (Spectrum → Peptides)  
 *AI approaches for peptides identification and quantification*  
-
-
+ | Paper Title & Link | Method Type | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [InstaNovo enables diffusion-powered de novo peptide sequencing in large-scale proteomics experiments](https://www.nature.com/articles/s42256-025-01019-5) |Transformer, diffusion model |nature machine intelligence| [![Star](https://img.shields.io/github/stars/instadeepai/InstaNovo.svg?style=social&label=Star)](https://github.com/instadeepai/InstaNovo)  |InstaNovo |
+| [De Novo Mass Spectrometry Peptide Sequencing with a Transformer Model](https://www.biorxiv.org/content/10.1101/2022.02.07.479481v2) |Transformer|ICML 2022| [![Star](https://img.shields.io/github/stars/Noble-Lab/casanovo.svg?style=social&label=Star)](https://github.com/Noble-Lab/casanovo)  |CasaNovo |
+| [Bridging the Gap between Database Search and De Novo Peptide Sequencing with SearchNovo](https://www.biorxiv.org/content/10.1101/2024.10.19.619186v1) |Transformer, Database|ICLR 2025| — |SearchNovo |
+| [De novo peptide sequencing by deep learning](https://www.pnas.org/doi/10.1073/pnas.1705691114) |CNN, LSTM|PNAs 2017| [![Star](https://img.shields.io/github/stars/nh2tran/DeepNovo.svg?style=social&label=Star)](https://github.com/nh2tran/DeepNovo)  |deepNovo |
+| [Computationally Instrument-Resolution-independent De Novo Peptide Sequencing for High-Resolution Devices](https://www.nature.com/articles/s42256-021-00304-3) |CNN, LSTM|Nature Machine Intelligence 2021| [![Star](https://img.shields.io/github/stars/volpato30/PointNovo.svg?style=social&label=Star)](https://github.com/volpato30/PointNovo)  |PointNovo |
+| [AdaNovo: Adaptive De Novo Peptide Sequencing with Conditional Mutual Information](https://arxiv.org/abs/2403.07013) |Transformer|NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/adanovo_v1)  |AdaNovo |
+| [NovoBench: Benchmarking Deep Learning-based De Novo Peptide Sequencing Methods in Proteomics](https://arxiv.org/abs/2406.11906) | - |NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/NovoBench.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/NovoBench)  |benchmark |
+| [Accurate de novo peptide sequencing using fully convolutional neural networks](https://link.springer.com/article/10.1038/s41467-023-43010-x) | CNN | Nature Communications 2023| [![Star](https://img.shields.io/github/stars/lkytal/PepNet.svg?style=social&label=Star)](https://github.com/lkytal/PepNet)  |PepNet |
 ---
 
 ## 3. NMR Spectroscopy (Small Molecules)

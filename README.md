@@ -31,6 +31,7 @@
 | [Prediction of electron ionization mass spectra based on graph convolutional networks](https://doi.org/10.1016/j.ijms.2022.116817) | GCN, MLP | International Journal of Mass Spectrometry |  | Baojie Zhang mass spectra prediction |
 |[QCxMS and QCEIMS related publications](https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms_cites.html)|Born-Oppenheimer Molecular Dynamics|| [![Star](https://img.shields.io/github/stars/qcxms/QCxMS.svg?style=social&label=Star)](https://github.com/qcxms/QCxMS) |QCxMS, QCxMS2, QCEIMS, First Principles Calculation, [project website](https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms_cites.html)|
 |[3DMolMS: prediction of tandem mass spectra from 3D molecular conformations]()| 3D Molecular Network |Bioinformatics|[![Star](https://img.shields.io/github/stars/JosieHong/3DMolMS.svg?style=social&label=Star)](https://github.com/JosieHong/3DMolMS)|3DMolMs,[project website](https://koina.wilhelmlab.org/docs#post-/3dmolms_qtof/infer)|
+|[Rapid Approximate Subset-Based Spectra Prediction for Electron Ionization–Mass Spectrometry](https://pubs.acs.org/doi/10.1021/acs.analchem.2c02093?ref=pdf)|graph neural network |Analytical Chemistry|[![Star](https://img.shields.io/github/stars/thejonaslab/rassp-public.svg?style=social&label=Star)](https://github.com/thejonaslab/rassp-public)|rassp|
 | [Towards First Principles Calculation of Electron Impact Mass Spectra of Molecules](https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.201300158)|Mass Spectroscopy computational therory| Angewandte International Edition Chemie|| theory introduction|
 
 
@@ -101,14 +102,18 @@
 | [Computational mass spectrometry for small-molecule fragmentation](https://doi.org/10.1016/j.trac.2013.09.008) | General models of fragmentation, Simulation Software, Fragmentation Prediction Software, Machine Learning, Heuristic Method, Combination of MetFrag and spectral library search, Classifier, Kernel-based method, Combinatorial Optimization Model | TrAC Trends in Analytical Chemistry |  | DENDRAL, Mass Frontier 4, Mass Frontier 6, ACD Fragmenter, ISIS, MetFrag, MetFusion, Varmuza feature-based classification approach, Heinonen et al. kernel-based approach, Fragmentation Trees, mass spectrometry fragmentation, review paper |
 | [Searching molecular structure databases using tandem MS data: are we there yet?](https://doi.org/10.1016/j.cbpa.2016.12.010) | Automated Method, Machine Learning | Current Opinion in Chemical Biology |  | CFM-ID, MetFrag, MAGMa, FingerID, CSI:FingerID, MetFrag2.2, MAGMa+, MSFINDER, MIDAS, IOKR version of CSI:FingerID, metabolite identification, review paper |
 | [Unsupervised machine learning for exploratory data analysis in imaging mass spectrometry](https://doi.org/10.1002/mas.21602) | Unsupervised machine learning | Mass Spectrometry Reviews |  | PCA, IMS data analysis,  Project Link: [BioMap](https://www.ms-imaging.org/biomap/), review paper |
-|[NIST20](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library| | |[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
+|[Machine Learning in Small-Molecule Mass Spectrometry](https://www.annualreviews.org/content/journals/10.1146/annurev-anchem-071224-082157)| GNN, Transformer, Machine learning|Annual Review of Analytical Chemistry |  || |review paper|
+|[NIST20 ](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors)|data library| | |[project website](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:distributors), purchase required|
 |[NPLIB1](https://github.com/samgoldman97/mist)|dataset,benchmark| | |[data source](https://github.com/samgoldman97/mist), deriving from [CANOPUS](https://www.nature.com/articles/s41587-020-0740-8) by filtering to [M+H] spectra |
+|[GeMS](https://huggingface.co/datasets/roman-bushuiev/GeMS)| dataset| | |dataset collected by [Dreams](https://www.nature.com/articles/s41587-025-02663-3), LC-MS, 714 million MS/MS spectra|
 | [MSnLib: efficient generation of open multi-stage fragmentation mass spectral libraries](https://www.nature.com/articles/s41592-025-02813-0) | Spectral Library |  Nature Methods |  |  MSnLib |
+
 ### 1.5 Spectrum Databases (API Usage)
 | Name & Link | Request Type | Description | Return information | API_link |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
 | [GNPS](https://external.gnps2.org/gnpslibraryjson) | html | This gets you all spectra but without peaks. | Spectrum Metadata | [json](https://external.gnps2.org/gnpslibraryjson) |
 | [MoNA](https://mona.fiehnlab.ucdavis.edu/documentation/query) | curl | Search for Mass Spectrum | | |
+
 
 ## 2. Mass Spectrometry (Peptides)
 

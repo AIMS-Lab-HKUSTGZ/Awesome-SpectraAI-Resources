@@ -131,7 +131,13 @@
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
 | [AlphaPeptDeep: a modular deep learning framework to predict peptide properties for proteomics](https://www.nature.com/articles/s41467-022-34904-3) | Benchmark | Nature communications |  [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/MannLabs/alphapeptdeep) |  AlphaPeptDeep |
+
+### 2.4 General Tools
+ | Paper Title & Link | Feasible scene | Venue | Code | Notes |
+|--------------------|------------------|--------------------|--------------------|------------------------------------------|
+| [MSBooster: improving peptide identification rates using deep learning-based features](https://www.nature.com/articles/s41467-023-40129-9#Fig1) | Rating  between LC-MS/MS spectra and Piptide | Nature communications |[![Star](https://img.shields.io/github/stars/matchms/matchms.svg?style=social&label=Star)]([https://github.com/matchms/matchms](https://github.com/Nesvilab/MSBooster))  |python package|
 ---
+
 
 ## 3. NMR Spectroscopy (Small Molecules)
 

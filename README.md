@@ -132,15 +132,16 @@
 | [De Novo Mass Spectrometry Peptide Sequencing with a Transformer Model](https://www.biorxiv.org/content/10.1101/2022.02.07.479481v2) |Transformer|ICML 2022| [![Star](https://img.shields.io/github/stars/Noble-Lab/casanovo.svg?style=social&label=Star)](https://github.com/Noble-Lab/casanovo)  |CasaNovo |
 | [Bridging the Gap between Database Search and De Novo Peptide Sequencing with SearchNovo](https://www.biorxiv.org/content/10.1101/2024.10.19.619186v1) |Transformer, Database|ICLR 2025| — |SearchNovo |
 | [De novo peptide sequencing by deep learning](https://www.pnas.org/doi/10.1073/pnas.1705691114) |CNN, LSTM|PNAs 2017| [![Star](https://img.shields.io/github/stars/nh2tran/DeepNovo.svg?style=social&label=Star)](https://github.com/nh2tran/DeepNovo)  |deepNovo |
-| [Computationally Instrument-Resolution-independent De Novo Peptide Sequencing for High-Resolution Devices](https://www.nature.com/articles/s42256-021-00304-3) |CNN, LSTM|Nature Machine Intelligence 2021| [![Star](https://img.shields.io/github/stars/volpato30/PointNovo.svg?style=social&label=Star)](https://github.com/volpato30/PointNovo)  |PointNovo |
+| [Computationally Instrument-Resolution-independent De Novo Peptide Sequencing for High-Resolution Devices](https://www.nature.com/articles/s42256-021-00304-3) |CNN, LSTM|Nature Machine Intelligence 2021| — |PointNovo |
 | [AdaNovo: Adaptive De Novo Peptide Sequencing with Conditional Mutual Information](https://arxiv.org/abs/2403.07013) |Transformer|NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/adanovo_v1)  |AdaNovo |
-| [NovoBench: Benchmarking Deep Learning-based De Novo Peptide Sequencing Methods in Proteomics](https://arxiv.org/abs/2406.11906) | - |NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/NovoBench.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/NovoBench)  |benchmark |
 | [Accurate de novo peptide sequencing using fully convolutional neural networks](https://link.springer.com/article/10.1038/s41467-023-43010-x) | CNN | Nature Communications 2023| [![Star](https://img.shields.io/github/stars/lkytal/PepNet.svg?style=social&label=Star)](https://github.com/lkytal/PepNet)  |PepNet |
-
+| [A transformer model for de novo sequencing of data-independent acquisition mass spectrometry data](https://www.nature.com/articles/s41592-025-02718-y) | Transformer | Nature Method 2025| [![Star](https://img.shields.io/github/stars/Noble-Lab/cascadia.svg?style=social&label=Star)](https://github.com/Noble-Lab/cascadia)  |cascadia |
+| [Towards highly sensitive deep learning-based end-to-end database search for tandem mass spectrometry](https://doi.org/10.1038/s42256-024-00960-1) | Transformer | Nature machine intelligence 2025| [![Star](https://img.shields.io/github/stars/yonghanyu/DeepSearch.svg?style=social&label=Star)](https://github.com/yonghanyu/DeepSearch)  |Deepsearch |
 ### 2.3 Datasets, Benchmark and Review
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
 | [AlphaPeptDeep: a modular deep learning framework to predict peptide properties for proteomics](https://www.nature.com/articles/s41467-022-34904-3) | Benchmark | Nature communications |  [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/MannLabs/alphapeptdeep) |  AlphaPeptDeep |
+| [NovoBench: Benchmarking Deep Learning-based De Novo Peptide Sequencing Methods in Proteomics](https://arxiv.org/abs/2406.11906) | Benchmark |NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/NovoBench.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/NovoBench)  |NovoBench |
 
 ### 2.4 General Tools
  | Paper Title & Link | Feasible scene | Venue | Code | Notes |

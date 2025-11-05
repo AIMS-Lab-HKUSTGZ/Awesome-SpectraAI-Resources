@@ -123,6 +123,10 @@
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
 | [Full-Spectrum Prediction of Peptides Tandem Mass Spectra using Deep Neural Network](https://pubs.acs.org/doi/10.1021/acs.analchem.9b04867) |CNN|Analytical Chemistry 2020| [![Star](https://img.shields.io/github/stars/lkytal/PredFull.svg?style=social&label=Star)](https://github.com/lkytal/PredFull)  |PredFull |
+| [Prosit: proteome-wide prediction of peptide tandem mass spectra by deep learning](https://www.nature.com/articles/s41592-019-0426-7) |Transformer|Nature Methods 2019| [![Star](https://img.shields.io/github/stars/kusterlab/prosit.svg?style=social&label=Star)](https://github.com/kusterlab/prosit/?tab=readme-ov-file)  |Prosit |
+| [High-quality MS/MS spectrum prediction for data-dependent and data-independent acquisition data analysis](https://www.nature.com/articles/s41592-019-0427-6) |LSTM|Nature Methods 2019| [![Star](https://img.shields.io/github/stars/verilylifesciences/deepmass/tree/master/prism.svg?style=social&label=Star)](https://github.com/verilylifesciences/deepmass/tree/master/prism)  |DeepMass:Prism |
+
+
 
 ### 2.2 Inverse Task (Spectrum → Peptides)  
 *AI approaches for peptides identification and quantification*  
@@ -136,7 +140,9 @@
 | [AdaNovo: Adaptive De Novo Peptide Sequencing with Conditional Mutual Information](https://arxiv.org/abs/2403.07013) |Transformer|NeurIPS 2024| [![Star](https://img.shields.io/github/stars/Westlake-OmicsAI/adanovo_v1.svg?style=social&label=Star)](https://github.com/Westlake-OmicsAI/adanovo_v1)  |AdaNovo |
 | [Accurate de novo peptide sequencing using fully convolutional neural networks](https://link.springer.com/article/10.1038/s41467-023-43010-x) | CNN | Nature Communications 2023| [![Star](https://img.shields.io/github/stars/lkytal/PepNet.svg?style=social&label=Star)](https://github.com/lkytal/PepNet)  |PepNet |
 | [A transformer model for de novo sequencing of data-independent acquisition mass spectrometry data](https://www.nature.com/articles/s41592-025-02718-y) | Transformer | Nature Method 2025| [![Star](https://img.shields.io/github/stars/Noble-Lab/cascadia.svg?style=social&label=Star)](https://github.com/Noble-Lab/cascadia)  |cascadia |
-| [Towards highly sensitive deep learning-based end-to-end database search for tandem mass spectrometry](https://doi.org/10.1038/s42256-024-00960-1) | Transformer | Nature machine intelligence 2025| [![Star](https://img.shields.io/github/stars/yonghanyu/DeepSearch.svg?style=social&label=Star)](https://github.com/yonghanyu/DeepSearch)  |Deepsearch |
+| [Towards highly sensitive deep learning-based end-to-end database search for tandem mass spectrometry](https://doi.org/10.1038/s42256-024-00960-1) | Transformer | Nature machine intelligence 2025| [![Star](https://img.shields.io/github/stars/yonghanyu/DeepSearch.svg?style=social&label=Star)](https://github.com/yonghanyu/DeepSearch)  |Deepsearch, database search|
+| [π-PrimeNovo: an accurate and efficient nonautoregressive deep learning model for de novo peptide sequencing](https://www.nature.com/articles/s41467-024-55021-3) | Transformer | Nature Communications 2025| [![Star](https://img.shields.io/github/stars/PHOENIXcenter/pi-PrimeNovo.svg?style=social&label=Star)](https://github.com/PHOENIXcenter/pi-PrimeNovo)  |π-PrimeNovo|
+
 ### 2.3 Datasets, Benchmark and Review
  | Paper Title & Link | Method Type | Venue | Code | Notes |
 |--------------------|------------------|--------------------|--------------------|------------------------------------------|
